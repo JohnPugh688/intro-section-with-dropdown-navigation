@@ -12,7 +12,7 @@ function toggleMobileMenu() {
 
 document.addEventListener("DOMContentLoaded", (event) => {
   const dropdownButtons = document.querySelectorAll(
-    "#dropdownButton, #companyDropdownButton"
+    "#dropdownButton, #companyDropdownButton, #hamburgerDropdownButton, #hamburgerCompanyDropdownButton"
   );
 
   dropdownButtons.forEach((button) => {
@@ -55,18 +55,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
-
-// dropdownToggles.forEach((toggle) => {
-//   toggle.addEventListener("click", () => {
-//     const dropdownMenu = toggle.nextElementSibling;
-
-//     if (dropdownMenu.classList.contains("hidden")) {
-//       document.querySelectorAll(".dropdown-menu").foreach((menu) => {
-//         menu.classList.add("hidden");
-//       });
-//       dropdownMenu.classList.remove("hidden");
-//     } else {
-//       dropdownMenu.classList.add("hidden");
-//     }
-//   });
-// });
